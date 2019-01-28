@@ -1,0 +1,45 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(150px, auto);
+}
+/* Pour explication
+
+grid-template-columns: repeat (x, auto)
+Dans cet exemple, grid columns va répéter ces colonnes , avec X comme 
+le nombre en x sur un repère (horizontal) et auto va 
+définir la taille des carrés demandé.
+*/
+
+/* grid-auto-rows: minmax(Y, auto)
+lui va faire presque le même travail que précédement.
+Y défini la taille d'un cube en verticale, et auto va régler la taille
+des carrés demandé */
+
+.photo {
+	width:50px;
+	height:50px;
+  grid-column: 1;
+  grid-row: 1/4;
+}
+.two { 
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
